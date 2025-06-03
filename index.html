@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<blog xmlns="http://www.w3.org/1999/xhtml">
+<blog xmlns="http://www.w3.org/1999/xhtml XHTML namespace XHTML namespace ">
   <head>
     <title>熊出没探险日记</title>
     <style type="text/css">
@@ -23,7 +23,6 @@
         background-attachment: fixed;
         background-size: 300px;
         background-blend-mode: overlay;
-        text-align: right; /* 文本右对齐 */
       }
       header {
         background: linear-gradient(135deg, var(--primary), #d2691e);
@@ -46,17 +45,13 @@
         border-radius: 10px;
         margin-bottom: 40px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        text-align: center; /* 导航菜单内容居中 */
       }
       nav ul {
         list-style: none;
         padding: 0;
-        display: inline-block; /* 修改为行内块，配合居中 */
+        display: flex;
+        justify-content: space-around;
         margin: 0;
-      }
-      nav li {
-        display: inline-block; /* 列表项行内块显示 */
-        margin: 0 10px; /* 列表项间距 */
       }
       nav a {
         text-decoration: none;
@@ -79,7 +74,6 @@
         border-radius: 15px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         border-left: 5px solid var(--primary);
-        text-align: right; /* 内容右对齐 */
       }
       h2 {
         color: var(--primary);
@@ -87,10 +81,9 @@
         padding-bottom: 10px;
         font-size: 1.8em;
         margin-top: 0;
-        text-align: center; /* 标题居中 */
       }
       .media-container {
-        margin: 30px auto; /* 图片容器居中 */
+        margin: 30px 0;
         text-align: center;
         background: white;
         padding: 15px;
@@ -113,7 +106,7 @@
         padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
-        margin: 30px auto; /* 视频容器居中 */
+        margin: 30px 0;
         border-radius: 15px;
         box-shadow: 0 5px 20px rgba(0,0,0,0.15);
       }
@@ -128,13 +121,12 @@
       .character-card {
         display: flex;
         align-items: center;
-        margin: 25px auto; /* 角色卡片居中 */
+        margin: 25px 0;
         padding: 20px;
         background: linear-gradient(to right, #f8f1e0, #f0e6cc);
         border-radius: 15px;
         box-shadow: 0 3px 8px rgba(0,0,0,0.05);
         transition: transform 0.3s ease;
-        text-align: left; /* 角色卡片内容左对齐 */
       }
       .character-card:hover {
         transform: translateY(-5px);
@@ -176,12 +168,6 @@
           margin-right: 0;
           margin-bottom: 15px;
         }
-      }
-      /* 图片欣赏部分图片大小一致 */
-      #gallery .media-container img {
-        width: 100%;
-        max-width: 300px; /* 统一图片大小 */
-        height: auto;
       }
       ]]>
     </style>
@@ -277,7 +263,7 @@
       <p>如果你也是《熊出没》的粉丝，欢迎通过以下方式联系我交流心得：</p>
       <ul>
         <li>📧 邮箱：<a href="mailto:bearfan@example.com">bearfan@example.com</a></li>
-        <li>🐱 GitHub：<a href="https://github.com/bearadventure" target="_blank">github.com/bearadventure</a></li>
+        <li>🐱 GitHub：<a href="https://github.com/bearadventure  " target="_blank">github.com/bearadventure</a></li>
         <li>🐻 熊出没官方微博：@熊出没动画</li>
       </ul>
     </section>
